@@ -1,155 +1,514 @@
-html = r'''<!DOCTYPE html>
+ᴛʀᴇᴘ//ʀᴜssɪᴀ, [23.07.2026 18:57]
+<!DOCTYPE html>
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Приглашение 💗</title>
+
 <style>
-*{box-sizing:border-box;font-family:Arial,sans-serif}
+
+*{
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
 body{
-margin:0;height:100vh;display:flex;align-items:center;justify-content:center;
-background:linear-gradient(135deg,#ffd1e3,#fff5fa);overflow:hidden
+margin:0;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+overflow:hidden;
+background:linear-gradient(135deg,#ffd1e3,#fff5fa);
 }
+
+
 .card{
-background:white;width:90%;max-width:430px;padding:35px;border-radius:30px;
-text-align:center;box-shadow:0 20px 50px rgba(255,80,150,.25)
+background:white;
+width:90%;
+max-width:430px;
+padding:35px;
+border-radius:30px;
+text-align:center;
+box-shadow:0 20px 50px rgba(255,80,150,.25);
 }
-.hidden{display:none}
-h1{color:#ff4f91}
-p{color:#555;font-size:18px;line-height:1.5}
-.heart,.envelope{font-size:70px}
-.envelope{cursor:pointer;animation:float 2s infinite}
-@keyframes float{50%{transform:translateY(-10px)}}
+
+
+.hidden{
+display:none;
+}
+
+
+h1{
+color:#ff4f91;
+}
+
+
+p{
+font-size:18px;
+color:#555;
+line-height:1.5;
+}
+
+
+.heart,.envelope{
+font-size:75px;
+}
+
+
+.envelope{
+cursor:pointer;
+animation:float 2s infinite;
+}
+
+
+@keyframes float{
+50%{
+transform:translateY(-10px);
+}
+}
+
+
 button{
-border:0;padding:14px 25px;border-radius:30px;font-size:17px;
-margin:8px;cursor:pointer
+border:none;
+padding:14px 25px;
+border-radius:30px;
+font-size:17px;
+cursor:pointer;
+margin:8px;
 }
-.yes{background:#ff5c9d;color:white}
-.no{background:#eee;color:#777;position:absolute}
+
+
+.yes{
+background:#ff5c9d;
+color:white;
+}
+
+
+.no{
+background:#eee;
+color:#777;
+position:absolute;
+}
+
+
 .option{
-width:100%;background:#ffe0ed;color:#ff4f91
+width:100%;
+background:#ffe0ed;
+color:#ff4f91;
 }
-.selected{background:#ff5c9d;color:white}
+
+
+.selected{
+background:#ff5c9d;
+color:white;
+}
+
+
 .ticket{
-background:#fff0f7;border:3px dashed #ff8fba;padding:25px;
-border-radius:20px;text-align:left
+background:#fff0f7;
+border:3px dashed #ff8fba;
+padding:25px;
+border-radius:20px;
+text-align:left;
 }
+
+
 .stamp{
-display:inline-block;margin-top:20px;padding:8px 15px;
-border:2px solid #ff5c9d;color:#ff5c9d;transform:rotate(-8deg)
+display:inline-block;
+margin-top:20px;
+padding:8px 15px;
+border:2px solid #ff5c9d;
+color:#ff5c9d;
+transform:rotate(-8deg);
 }
+
+
 </style>
+
 </head>
 
 <body>
 
+
 <div class="card" id="page0">
-<div class="envelope" onclick="showPage(1)">💌</div>
-<h1>У тебя новое сообщение</h1>
-<p>Нажми на конверт :)</p>
+
+<div class="envelope" onclick="showPage(1)">
+💌
 </div>
+
+<h1>
+У тебя новое сообщение
+</h1>
+
+<p>
+Нажми на конверт :)
+</p>
+
+</div>
+
+
 
 <div class="card hidden" id="page1">
-<div class="heart">💗</div>
-<h1>Привет, Даня :)</h1>
+
+<div class="heart">
+💗
+</div>
+
+<h1>
+Привет, Даня :)
+</h1>
+
 <p>
-Я решила пригласить тебя необычно.<br><br>
+Я решила пригласить тебя необычно.
+<br><br>
 Ты пойдёшь со мной на свидание?
 </p>
-<button class="yes" onclick="showPage(2)">Да 💗</button>
-<button class="no" id="no">Нет 🙈</button>
+
+
+<button class="yes" onclick="showPage(2)">
+Да 💗
+</button>
+
+
+<button class="no" id="no">
+Нет 🙈
+</button>
+
+
 </div>
 
+ᴛʀᴇᴘ//ʀᴜssɪᴀ, [23.07.2026 18:57]
 <div class="card hidden" id="page2">
-<div class="heart">✨</div>
-<h1>Выбери день</h1>
-<button class="option date">Пятница вечером 🌙</button>
-<button class="option date">Суббота днём ☀️</button>
-<button class="option date">Воскресенье вечером ✨</button>
-<button class="yes" onclick="showPage(3)">Дальше 💗</button>
+
+<div class="heart">
+✨
 </div>
+
+<h1>
+Выбери день
+</h1>
+
+
+<button class="option date">
+Пятница вечером 🌙
+</button>
+
+
+<button class="option date">
+Суббота днём ☀️
+</button>
+
+
+<button class="option date">
+Воскресенье вечером ✨
+</button>
+
+
+<button class="yes" onclick="showPage(3)">
+Дальше 💗
+</button>
+
+</div>
+
+
+
 
 <div class="card hidden" id="page3">
-<div class="heart">💕</div>
-<h1>Что будем делать?</h1>
-<button class="option activity">☕ Кофе</button>
-<button class="option activity">🎬 Кино</button>
-<button class="option activity">🚶 Прогулка</button>
-<button class="option activity">🎁 Сюрприз</button>
-<br>
-<button class="yes" onclick="createTicket()">Получить билет 🎟️</button>
+
+<div class="heart">
+💕
 </div>
+
+<h1>
+Что будем делать?
+</h1>
+
+
+<button class="option activity">
+☕ Кофе
+</button>
+
+
+<button class="option activity">
+🎬 Кино
+</button>
+
+
+<button class="option activity">
+🚶 Прогулка
+</button>
+
+
+<button class="option activity">
+🎁 Сюрприз
+</button>
+
+
+<br>
+
+
+<button class="yes" onclick="createTicket()">
+Получить билет 🎟️
+</button>
+
+
+</div>
+
+
+
 
 <div class="card hidden" id="page4">
-<div class="heart">🎟️</div>
-<h1>Твой билет</h1>
-<div class="ticket" id="ticket"></div>
-<div class="stamp">APPROVED ✓</div>
-<p>Миссия: хорошо провести время 💗</p>
+
+<div class="heart">
+🎟️
 </div>
 
-<script>
-let date="";
-let activities=[];
 
-function showPage(n){
-document.querySelectorAll(".card").forEach(c=>c.classList.add("hidden"));
-document.getElementById("page"+n).classList.remove("hidden");
+<h1>
+Твой билет
+</h1>
+
+
+<div class="ticket" id="ticket">
+
+</div>
+
+
+<div class="stamp">
+APPROVED ✓
+</div>
+
+
+<p>
+Миссия выполнена 💗
+</p>
+
+
+</div>
+
+ᴛʀᴇᴘ//ʀᴜssɪᴀ, [23.07.2026 18:58]
+<script>
+
+let date = "";
+let activities = [];
+
+
+// переключение страниц
+
+function showPage(number){
+
+document.querySelectorAll(".card").forEach(card=>{
+card.classList.add("hidden");
+});
+
+
+document.getElementById("page"+number)
+.classList.remove("hidden");
+
 }
 
-let no=document.getElementById("no");
-let noCount=0;
-no.addEventListener("mouseover",()=>{
-let phrases=["Ты уверен? 🤨","Подумай ещё 😌","Кажется, ты ошибся 😂","Кнопка сломалась 💗"];
-no.innerText=phrases[Math.min(noCount,3)];
+
+
+// убегающая кнопка "Нет"
+
+let noButton = document.getElementById("no");
+
+let noTexts = [
+"Ты уверен? 🤨",
+"Подумай ещё 😌",
+"Кажется, ты ошибся 😂",
+"Эта кнопка сбежала 💗"
+];
+
+let noCount = 0;
+
+
+noButton.addEventListener("mouseover", function(){
+
+
+noButton.innerText = noTexts[Math.min(noCount,3)];
+
 noCount++;
-no.style.left=Math.random()*(window.innerWidth-120)+"px";
-no.style.top=Math.random()*(window.innerHeight-60)+"px";
+
+
+let x = Math.random() * (window.innerWidth - 120);
+let y = Math.random() * (window.innerHeight - 80);
+
+
+noButton.style.left = x + "px";
+noButton.style.top = y + "px";
+
+
 });
+
+
+
+
+
+// выбор даты
+
+document.querySelectorAll(".date").forEach(button=>{
+
+
+button.addEventListener("click", function(){
+
 
 document.querySelectorAll(".date").forEach(btn=>{
-btn.onclick=function(){
-document.querySelectorAll(".date").forEach(b=>b.classList.remove("selected"));
-this.classList.add("selected");
-date=this.innerText;
-}
+btn.classList.remove("selected");
 });
 
-document.querySelectorAll(".activity").forEach(btn=>{
-btn.onclick=function(){
-this.classList.toggle("selected");
-if(activities.includes(this.innerText)){
-activities=activities.filter(x=>x!==this.innerText);
-}else{
-activities.push(this.innerText);
-}
-}
+
+this.classList.add("selected");
+
+
+date = this.innerText;
+
+
 });
+
+
+});
+
+
+
+
+
+// выбор планов
+
+document.querySelectorAll(".activity").forEach(button=>{
+
+
+button.addEventListener("click", function(){
+
+
+this.classList.toggle("selected");
+
+
+if(activities.includes(this.innerText)){
+
+
+activities = activities.filter(item=>item !== this.innerText);
+
+
+}else{
+
+
+activities.push(this.innerText);
+
+
+}
+
+
+});
+
+
+});
+
+
+
+
+
+// создание билета
 
 function createTicket(){
-if(!date){alert("Выбери дату 💗");return;}
-if(activities.length===0){alert("Выбери план 💗");return;}
 
-document.getElementById("ticket").innerHTML=`
-<b>🎟️ DATE PASS</b><br><br>
-<b>Билет выписан для:</b><br>
-Даня 💗<br><br>
-<b>Автор:</b><br>
-Анастасия ✨<br><br>
-<b>Дата:</b><br>
-${date}<br><br>
-<b>План:</b><br>
-${activities.join("<br>")}<br><br>
-<b>Статус:</b><br>
 
-ᴛʀᴇᴘ//ʀᴜssɪᴀ, [23.07.2026 18:43]
-APPROVED ✓
-`;
-showPage(4);
+if(date === ""){
+
+alert("Выбери дату 💗");
+return;
+
 }
+
+
+if(activities.length === 0){
+
+alert("Выбери план 💗");
+return;
+
+}
+
+
+
+document.getElementById("ticket").innerHTML = `
+
+
+<b>🎟️ DATE PASS</b>
+
+<br><br>
+
+
+<b>Билет выписан для:</b>
+
+<br>
+
+Даня 💗
+
+
+<br><br>
+
+
+<b>Автор:</b>
+
+<br>
+
+Анастасия ✨
+
+
+<br><br>
+
+
+<b>Дата:</b>
+
+<br>
+
+${date}
+
+
+<br><br>
+
+
+<b>План:</b>
+
+<br>
+
+${activities.join("<br>")}
+
+
+<br><br>
+
+
+<b>Статус:</b>
+
+<br>
+
+Доступ разрешён ✓
+
+
+<br><br>
+
+
+<b>Миссия:</b>
+
+<br>
+
+Свидание успешно запланировано 💕
+
+`;
+
+
+
+showPage(4);
+
+
+}
+
+
 </script>
+
 
 </body>
 </html>
-'''
-
